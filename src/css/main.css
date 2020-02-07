@@ -5,6 +5,7 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
 .page {
 	display: grid;
 	grid-template-columns: 30% auto;
@@ -13,6 +14,7 @@ body {
 .g1 {
 	position: fixed;
 	width: 30%;
+	height: 100vh;
 	margin-top: 100px;
 }
 
@@ -21,23 +23,38 @@ body {
 	margin-top: 100px;
 }
 
-.leftbar {
-	width: 500px;
-	height: 100vh;
-	float: right;
-	-webkit-box-shadow: -8px -6px 9px -7px rgba(0,0,0,0.75);
-	-moz-box-shadow: -8px -6px 9px -7px rgba(0,0,0,0.75);
-	box-shadow: -8px -6px 9px -7px rgba(0,0,0,0.75);
-}
-
-.name{
+.name {
 	font-size: 2em;
 	font-weight: 200;
 	padding: 20px 30px 0 0;
+}
+
+.leftbar {
 	float: right;
 }
 
-.links{
-	float: left;
+.nav{
 	margin-top: 20%;
+}
+
+.links_nav li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.links_nav li {
+	list-style: none;
+}
+
+.links {
+	margin-top: 20%;
+}
+
+.links_navbar li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+.links_navbar li {
+	list-style: none;
 }
