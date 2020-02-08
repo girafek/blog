@@ -37,9 +37,14 @@ body {
 	margin-top: 20%;
 }
 
+.nnav{
+	font-size: 22px;
+}
+
 .links_nav li a {
 	text-decoration: none;
 	color: #333333;
+	font-size: 19px;
 }
 
 .links_nav li {
@@ -50,11 +55,24 @@ body {
 	margin-top: 20%;
 }
 
+.slinks{
+	font-size: 22px;
+}
+
 .links_navbar li a {
 	text-decoration: none;
 	color: #333333;
+	font-size: 19px;
+}
+
+.links_navbar li a:hover {
+	color: black;
 }
 
 .links_navbar li {
 	list-style: none;
+}
+
+.links_navbar li a i {
+	font-size: 1.5em;
 }
