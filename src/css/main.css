@@ -78,12 +78,12 @@ body {
 	font-size: 1.5em;
 }
 
-.ds, .tl, .em {
+#ds, #tl, #em {
+	width: 80px;
 	position: absolute;
-	display: inline-block;
-	padding: 3px 10px;
+	padding: 3px 8px;
 	margin-left: 10px;
-	border-radius:2em;
+	border-radius: 3px;
 	box-sizing: border-box;
 	text-decoration:none;
 	font-weight: 400;
@@ -95,16 +95,14 @@ body {
 	top: auto;
 	}
 
-.ds:hover{
+#ds:hover {
 	background-color:black;
-	margin: 2px;
-	}
-.tl:hover {
-	background-color:black;
-	margin: 2px;
 }
-.em:hover {
+
+#tl:hover {
 	background-color:black;
-	margin: 2px;
 }
-} 
+
+#em:hover {
+	background-color:black;
+}
