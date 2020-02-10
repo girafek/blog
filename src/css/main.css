@@ -21,12 +21,15 @@ body {
 .g2 {
 	grid-column-start: 2;
 	margin-top: 100px;
+	font-size: 20px;
 }
 
 .name {
-	font-size: 2em;
+	font-size: 22px;
 	font-weight: 200;
 	padding: 20px 30px 0 0;
+	color: #305CF8;
+	text-decoration: none;
 }
 
 .leftbar {
@@ -38,17 +41,22 @@ body {
 }
 
 .nnav{
-	font-size: 22px;
+	font-size: 19px;
 }
 
 .links_nav li a {
 	text-decoration: none;
-	color: #333333;
-	font-size: 19px;
+	color: #305CF8;
+	font-size: 17px;
+}
+
+.links_nav li a:hover {
+	color: black;
 }
 
 .links_nav li {
 	list-style: none;
+	margin: 8px;
 }
 
 .links {
@@ -56,13 +64,13 @@ body {
 }
 
 .slinks{
-	font-size: 22px;
+	font-size: 19px;
 }
 
 .links_navbar li a {
 	text-decoration: none;
-	color: #333333;
-	font-size: 19px;
+	color: #305CF8;
+	font-size: 17px;
 }
 
 .links_navbar li a:hover {
@@ -71,38 +79,39 @@ body {
 
 .links_navbar li {
 	list-style: none;
-	margin: 10px;
+	margin: 8px;
 }
 
-.links_navbar li a i {
+.links_navbar li i {
 	font-size: 1.5em;
 }
 
 #ds, #tl, #em {
+	display: inline-block;
+	height: 28px;
 	width: 80px;
-	position: absolute;
 	padding: 3px 8px;
 	margin-left: 10px;
 	border-radius: 3px;
 	box-sizing: border-box;
 	text-decoration:none;
 	font-weight: 400;
-	color: white !important;
-	background-color: #333;
+	color: #F0FFFF;
+	background-color: #305CF8;
 	text-align:center;
 	transition: all .3s;
-	font-size: 18px !important;
+	font-size: 17px !important;
 	top: auto;
-	}
+}
 
 #ds:hover {
-	background-color:black;
+	background-color:#87CEFA;
 }
 
 #tl:hover {
-	background-color:black;
+	background-color:#87CEFA;
 }
 
 #em:hover {
-	background-color:black;
+	background-color:#87CEFA;
 }

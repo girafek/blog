@@ -28,9 +28,9 @@ function copyTextToClipboard(text) {
   });
 }
 
-var ds = document.querySelector('.ds'),
-  tl = document.querySelector('.tl'),
-  em = document.querySelector('.em')
+var ds = document.getElementById('ds'),
+  tl = document.getElementById('tl'),
+  em = document.getElementById('em')
 
 ds.addEventListener('click', function(event) {
   copyTextToClipboard('discord');
