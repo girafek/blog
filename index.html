@@ -14,35 +14,47 @@
 				Roman Wojciechowski
 			</a>
 			<div class="nav">
-				<span class="nnav">
-					Nawigacja:
-				</span>
 				<ul class="links_nav">
-					<li><a href="">n1</a></li>
-					<li><a href="">n2</a></li>
-					<li><a href="">n3</a></li>
-					<li><a href="">n4</a></li>
-				  </ul> 
-			</div>
-			<div class="links">
-				<span class="slinks">
-					Linki:	
-				</span>
-				<ul class="links_navbar">
-					<li><a href="#">GitHub</a></li>
-					<li><a href="#">Discord</a> <a href="#" id="ds" onclick="changeContentds()">Copy</a></li>
-					<li><a href="#">Telegram</a> <a href="#" id="tl" onclick="changeContenttl()">Copy</a></li>
-					<li><a href="#">E-mail</a> <a href="#" id="em" onclick="changeContentem()">Copy</a></li>
+					<li><a href="#omnie">O mnie</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#kontakt">Kontakt</a></li>
 				  </ul> 
 			</div>
 		</div>
 	</div>
 	<div class="page">
 		<div class="g2">
-			Strona w budowie.
+			Strona w budowie
+			<div id="omnie">
+				
+			</div>
+			<div id="portfolio">
+				
+			</div>
+			<div id="kontakt">
+				
+			</div>
 		</div>
 	</div>
 	<script src="src/js/copytocb.js"></script>
 	<script src="src/js/buttons.js"></script>
+	<script src="src/js/autoscroll.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+					$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+	</script>
 </body>
 </html>
