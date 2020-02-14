@@ -11,7 +11,7 @@ function changeContentds() {
 }
 
 function changeContentem() {
-    document.getElementById('em').innerHTML = "Copied";    
+    document.getElementById('em').setAttribute(data-tooltip, value: Copied);    
     document.getElementById('em').style.cssText = 'background-color: #43B581;';
     setTimeout(() => { document.getElementById('em').innerHTML = "Copy";  document.getElementById('em').style.cssText = 'background-color: #305CF8;';  }, 1500);
 }

@@ -30,6 +30,7 @@ body {
 }
 
 .name {
+	color: #333;
 	font-weight: 300;
 	font-size: 22px;
 	padding: 20px 30px 0 0;
@@ -90,36 +91,6 @@ body {
 	font-size: 1.5em;
 }
 
-#ds, #tl, #em {
-	display: inline-block;
-	height: 28px;
-	width: 80px;
-	padding: 3px 8px;
-	margin-left: 10px;
-	border-radius: 3px;
-	box-sizing: border-box;
-	text-decoration:none;
-	font-weight: 400;
-	color: #F0FFFF;
-	background-color: #305CF8;
-	text-align:center;
-	transition: all .3s;
-	font-size: 17px !important;
-	top: auto;
-}
-
-#ds:hover {
-	background-color:#87CEFA;
-}
-
-#tl:hover {
-	background-color:#87CEFA;
-}
-
-#em:hover {
-	background-color:#87CEFA;
-}
-
 
 #omnie, #portfolio, #kontakt {
 	font-size: 1.1em;
@@ -139,4 +110,78 @@ body {
 .firstl{
 	font-size: 21px;
 	color: #305CF8;
+}
+
+.contactlinks ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+#em{
+	cursor:pointer;
+}
+
+[data-tooltip] {
+	position: relative;
+	z-index: 10;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  bottom: calc(100% + 5px);
+  pointer-events: none;
+  transition: 0.2s;
+  will-change: transform;
+}
+
+[data-tooltip]:before {
+	content: attr(data-tooltip);
+	padding: 10px 18px;
+	min-width: 50px;
+	max-width: 300px;
+	width: max-content;
+	width: -moz-max-content;
+	border-radius: 6px;
+	font-size: 14px;
+	background-color: rgba(59, 72, 80, 0.9);
+	background-image: linear-gradient(30deg,
+	  rgba(59, 72, 80, 0.44),
+	  rgba(59, 68, 75, 0.44),
+	  rgba(60, 82, 88, 0.44));
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	text-align: center;
+	white-space: pre-wrap;
+	transform: translate(-50%, -5px) scale(0.5);
+}
+
+[data-tooltip]:after {
+	content: '';
+	border-style: solid;
+	border-width: 5px 5px 0px 5px;
+	border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+	transition-duration: 0s;
+	transform-origin: top;
+	transform: translateX(-50%) scaleY(0);
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+	visibility: visible;
+	opacity: 1;
+  }
+
+[data-tooltip]:hover:before {
+	transition-delay: 0.3s;
+	transform: translate(-50%, -5px) scale(1);
+}
+
+[data-tooltip]:hover:after {
+	transition-delay: 0.5s; 
+	transition-duration: 0.2s;
+	transform: translateX(-50%) scaleY(1);
 }

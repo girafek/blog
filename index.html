@@ -6,9 +6,10 @@
 	<link href="fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="src/css/main.css">
+	<link rel="icon" href="src/img/icon.png">
 </head>
 <body>
-	<div class="g1">
+	<div class="g1" id="background">
 		<div class="leftbar">
 			<a href="index.html" class="name">
 				Roman Wojciechowski
@@ -41,6 +42,13 @@
 				Kontakt
 			<div class="kontakt">
 				<span class="firstl">S</span>trona w budowie.
+				<div class="contactlinks">
+					<ul>
+						<li><a href="#"> Discord </a></li>
+						<li><a href="https://t.me/gonna_be_clever" target="_blank"> Telegram </a></li>
+						<li><span id="em" data-tooltip="Click to copy"> E-mail </span></li>
+					</ul>
+				</div>
 			</div>
 			</div>
 		</div>
@@ -64,6 +72,26 @@
 				}
 			  });
 			});
+	</script>
+	<script src="src/js/three.r95.min.js"></script>
+	<script src="src/js/vanta.birds.min.js"></script>
+	<script>
+		VANTA.BIRDS({
+		el: "#background",
+		mouseControls: true,
+		touchControls: true,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		birdSize: 1.50,
+		wingSpan: 11.00,
+		speedLimit: 2.00,
+		alignment: 13.00,
+		cohesion: 21.00,
+		quantity: 2.00,
+		backgroundAlpha: 0.00
+		})
 	</script>
 </body>
 </html>

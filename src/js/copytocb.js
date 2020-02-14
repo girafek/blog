@@ -28,18 +28,7 @@ function copyTextToClipboard(text) {
   });
 }
 
-var ds = document.getElementById('ds'),
-  tl = document.getElementById('tl'),
-  em = document.getElementById('em')
-
-ds.addEventListener('click', function(event) {
-  copyTextToClipboard('discord');
-});
-
-
-tl.addEventListener('click', function(event) {
-  copyTextToClipboard('telegram');
-});
+var em = document.getElementById('em');
 
 em.addEventListener('click', function(event) {
   copyTextToClipboard('e-mail');
