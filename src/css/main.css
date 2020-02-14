@@ -140,8 +140,8 @@ body {
 
 [data-tooltip]:before {
 	content: attr(data-tooltip);
-	padding: 10px 18px;
-	min-width: 50px;
+	padding: 10px 15px;
+	min-width: 80px;
 	max-width: 300px;
 	width: max-content;
 	width: -moz-max-content;
