@@ -81,6 +81,7 @@ li {
 .links_nav li a {
 	color: #305CF8;
 	font-size: 17px;
+	transition: .3s ease;
 }
 
 .links_nav li a:hover {
@@ -131,12 +132,23 @@ li {
 	padding: 30px 10px 0 0;
 }
 
-.contactlinks i {
-	font-size: 25px;
+.contactlink {
+	color: #305CF8;
+	transition: .3s ease;
+	max-width: 70px;
 }
 
-.contactlinks a {
-	color: #333;
+.contactlink:hover {
+	color: #000;
+}
+
+.contactlink:hover a {
+	color: #000;
+}
+
+.contactlink a {
+	transition: .3s ease;
+	color: #305CF8;
 }
 
 #em{
@@ -283,7 +295,7 @@ footer {
 	background-color: #F1F4FE;
 	height: 70px;
 	line-height: 70px;
-	
+	border-top: 1px solid rgb(207, 207, 255);
 }
 
 .footername_m{
@@ -359,4 +371,25 @@ footer {
 	.links_nav_m li{
 		margin: 0 20px 25px 20px;
 	}	
+}
+
+@media only screen and (max-width: 480px) {
+	.links_nav_m li a {
+		font-size: 17px;
+	}
+
+	.links_nav_m li{
+		margin: 0 10px 25px 10px;
+	}	
+
+	#omnie_m, #portfolio_m, #kontakt_m{
+		font-size: 20px;
+	}
+
+	.omnie_m, .portfolio_m, .kontakt_m{
+		font-size: 18px
+	}
+	.name_m{
+		font-size: 1.5em;
+	}
 }
