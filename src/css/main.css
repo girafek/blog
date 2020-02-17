@@ -58,6 +58,7 @@ li {
 	padding-top: 100px;
 	width: 30%;
 	height: 100vh;
+	border-right: 1px solid rgb(207, 207, 255);
 }
 
 .leftbar {
@@ -104,7 +105,7 @@ li {
 #omnie, #portfolio, #kontakt {
 	color: #305CF8;
 	font-size: 1.1em;
-	padding: 0 200px 0 0px;
+	padding: 0 200px 0 40px;
 }
 
 #kontakt{
@@ -124,12 +125,23 @@ li {
 	color: #305CF8;
 }
 
-.contactlinks ul li a {
+.contactlinks {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 10px 0 0;
+}
+
+.contactlinks i {
+	font-size: 25px;
+}
+
+.contactlinks a {
 	color: #333;
 }
 
 #em{
 	cursor:pointer;
+	max-width: 100px;
 }
 
 [data-tooltip] {
@@ -223,6 +235,7 @@ footer {
 	height: 80px;
 	line-height: 80px;
 	padding: 0 30px 0 30px;
+	border-top: 1px solid rgb(207, 207, 255);
 }
 
 .socialmedia {
