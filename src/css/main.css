@@ -120,6 +120,44 @@ li {
 	font-size: 19px;
 } 
 
+.portfolio {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 90px;
+}
+
+.pcontainer {
+	border: 1px solid rgb(207, 207, 255);
+	border-radius: 3px;
+	background-color: aliceblue;
+	min-width: 400px;
+	min-height: 300px;
+	margin-top: 50px;
+}
+
+.title_p {
+	font-size: 2em;
+	text-align: center;
+	line-height: 300px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s ease;
+}
+
+.pcontainer:hover .title_p {
+	visibility: visible;
+	opacity: 1;
+}
+
+.left {
+	margin-right: auto;
+}
+
+.right {
+	margin-left: auto;
+}
+
 .firstl{
 	font-size: 21px;
 	color: #305CF8;
