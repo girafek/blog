@@ -45,20 +45,21 @@ li {
 /* 3. Content */
 .page {
 	display: grid;
-	grid-template-columns: 30% auto;
+	grid-template-columns: 35% auto;
 	min-height: 100%;
 }
 
 /* 3.1 Left container */
 
 .g1 {
-	background-color: rgb(248, 248, 255);
+	background-color: #F2F3F7;
 
 	position: fixed;
 	padding-top: 100px;
-	width: 30%;
+	width: 35%;
 	height: 100vh;
 	border-right: 1px solid rgb(207, 207, 255);
+
 }
 
 .leftbar {
@@ -84,8 +85,17 @@ li {
 	transition: .3s ease;
 }
 
-.links_nav li a:hover {
-	color: black;
+.links_nav li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: .3s;
+}
+
+.links_nav li:hover::after{
+	width: 100%;
 }
 
 .links_nav li {
@@ -101,6 +111,7 @@ li {
 	grid-column-start: 2;
 
 	font-size: 20px;
+	background-color: rgba(242, 243, 247, 0.418);
 }
 
 #omnie, #portfolio, #kontakt {
