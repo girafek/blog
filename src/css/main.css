@@ -70,7 +70,7 @@ li {
 	color: #333;
 	text-decoration: none;
 	font-weight: 300;
-	font-size: 22px;
+	font-size: 24px;
 
 	padding: 20px 30px 0 0;
 }
@@ -81,7 +81,7 @@ li {
 
 .links_nav li a {
 	color: #305CF8;
-	font-size: 17px;
+	font-size: 20px;
 	transition: .3s ease;
 }
 
@@ -110,13 +110,13 @@ li {
 
 	grid-column-start: 2;
 
-	font-size: 20px;
+	font-size: 19px;
 	background-color: rgba(242, 243, 247, 0.418);
 }
 
 #omnie, #portfolio, #kontakt {
 	color: #305CF8;
-	font-size: 1.1em;
+
 	padding: 0 200px 0 40px;
 }
 
@@ -151,7 +151,7 @@ li {
 .title_p {
 	min-height: 300px;
 	padding: 20px 0 0 20px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	transition: .3s ease;
 	background-color: rgba(98, 132, 255, 0.205);
 }
@@ -165,8 +165,18 @@ li {
 }
 
 .firstl{
-	font-size: 21px;
+	font-size: 1.8em;
 	color: #305CF8;
+}
+
+.firstl::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 50px;
+	height: 20px;
+	background-color: rgba(98, 132, 255, 0.37);
+	z-index: -1;
 }
 
 .contactlinks {
@@ -176,27 +186,30 @@ li {
 }
 
 .contactlink {
-	color: #305CF8;
+	color: rgb(156, 156, 156);
 	transition: .3s ease;
-	max-width: 70px;
-}
-
-.contactlink:hover {
-	color: #000;
-}
-
-.contactlink:hover a {
-	color: #000;
-}
-
-.contactlink a {
-	transition: .3s ease;
-	color: #305CF8;
+	font-size: 19px;
 }
 
 #em{
 	cursor:pointer;
-	max-width: 100px;
+	max-width: 150px;
+	margin: 10px 0 10px 20px;
+}
+
+#tl {
+	margin: 10px 0 0px 20px;
+	color: #333;
+}
+
+#github {
+	margin: 0 0 0 20px;
+	font-size: 1.5em;
+	color: rgba(59, 72, 80, 0.9);
+}
+
+#tl:hover, #em:hover {
+	color: rgba(59, 72, 80, 0.9);
 }
 
 [data-tooltip] {
