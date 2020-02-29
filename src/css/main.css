@@ -116,8 +116,18 @@ li {
 
 #omnie, #portfolio, #kontakt {
 	color: #305CF8;
+	font-size: 22px;
+	padding: 5px 200px 0 40px;
+}
 
-	padding: 0 200px 0 40px;
+
+.bg::before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 17px;
+	z-index: -99;
+	background-color: #D9E0FC;
 }
 
 #kontakt{
@@ -169,20 +179,11 @@ li {
 	color: #305CF8;
 }
 
-.firstl::before {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 50px;
-	height: 20px;
-	background-color: rgba(98, 132, 255, 0.37);
-	z-index: -1;
-}
-
 .contactlinks {
 	display: flex;
 	flex-direction: column;
 	padding: 30px 10px 0 0;
+	margin-left: 20px;
 }
 
 .contactlink {
@@ -346,6 +347,7 @@ footer {
 }
 
 .footer_m {
+	display: none;
 	width: 100%;
 	margin: auto 0 0 0;
 	background-color: #F1F4FE;
@@ -405,6 +407,7 @@ footer {
 	padding-left: 0 !important;
 }
 
+
 @media only screen and (max-width: 850px) {
 	.g1, .page {
 		display: none;
@@ -433,6 +436,9 @@ footer {
 		font-size: 25px;
 		padding: 10px 0 0 10px;
 	}
+	.footer_m {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -449,6 +455,9 @@ footer {
 		min-height: 200px;
 		font-size: 25px;
 		padding: 10px 0 0 10px;
+	}
+	.footer_m {
+		display: block;
 	}
 }
 
@@ -482,5 +491,22 @@ footer {
 		min-height: 200px;
 		font-size: 25px;
 		padding: 10px 0 0 10px;
+	}
+
+	.contactlinks_m {
+		padding-top: 20px;
+	}
+
+	.contactlink_m {
+		padding-bottom: 5px;
+		padding-top: 10px;
+	}
+
+	.kontakt_title {
+		font-size: 20px;
+	}
+	
+	.footer_m {
+		display: block;
 	}
 }
