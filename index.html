@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/css/main.css">
 	<link rel="icon" href="src/img/icon.png">
+
 </head>
 <body>
 
@@ -17,12 +18,13 @@
 			<a class="name" href="https://romanwojciechowski.github.io/">
 				Roman Wojciechowski
 			</a>
+			<button onclick="change_css();">Check</button><br />
 			<div class="nav">
 				<ul class="links_nav">
-					<li><a href="#omnie">O mnie</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#kontakt">Kontakt</a></li>
-					<li><a href="">Blog</a></li>
+					<li><a class="textContrast" href="#omnie">O mnie</a></li>
+					<li><a class="textContrast" href="#portfolio">Portfolio</a></li>
+					<li><a class="textContrast" href="#kontakt">Kontakt</a></li>
+					<li><a class="textContrast" href="">Blog</a></li>
 				  </ul> 
 			</div> <!-- nav -->
 		</div> <!-- leftbar -->
@@ -30,7 +32,7 @@
 
 	<div class="page">
 
-		<div class="g2">
+		<div class="g2" id="contrast">
 			<div id="omnie">
 				<span class="bg">O mnie</span>
 			<div class="omnie">
@@ -40,16 +42,16 @@
 			<div id="portfolio">
 				<span class="bg"></span>Portfolio</span>
 			<div class="portfolio">
-				<section class="pcontainer left">
+				<section class="pcontainer left" id="pcontainer">
 					<div class="title_p">Title</div>
 				</section>
-				<section class="pcontainer right">
+				<section class="pcontainer right" id="pcontainer">
 					<div class="title_p">Title</div>
 				</section>
-				<section class="pcontainer left">
+				<section class="pcontainer left" id="pcontainer">
 					<div class="title_p">Title</div>
 				</section>
-				<section class="pcontainer right">
+				<section class="pcontainer right" id="pcontainer">
 					<div class="title_p">Title</div>
 				</section>
 			</div> 
@@ -65,7 +67,7 @@
 					</div> <!-- contactlinks -->
 				</div>
 			</div> <!-- kontakt -->
-			<footer>
+			<footer id="footer">
 				<span class="footername">Roman Wojciechowski</span> 
 				<div class="socialmedia">
 					<a href="https://github.com/romanwojciechowski" target="_blank"><i class="fab fa-github"></i></a>
@@ -178,5 +180,10 @@
 		backgroundAlpha: 0.00
 		})
 	</script>
+	    <script>
+			function change_css(){
+				document.querySelector('.textContrast').style.cssText = 'color: black;';
+			}
+		</script>
 </body>
 </html>
