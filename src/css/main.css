@@ -103,6 +103,22 @@ li {
 }
 
 
+.contrast {
+	color: black;
+	background: #ffffff;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	font-size: 18px;
+	transition: all 0.3s ease 0s;
+}
+
+.contrast:hover {
+	color: white;
+	border-color: white;
+	background-color: black;
+}
+
 /* 3.1 Right container */
 
 .g2 {
