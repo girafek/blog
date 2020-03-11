@@ -8,67 +8,68 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="src/css/main.css">
 	<link rel="icon" href="src/img/icon.png">
-
 </head>
 <body>
 
-	<div class="g1" id="background">
+	<div class="g1 bgContrast" id="background">
 
 		<div class="leftbar">
-			<a class="name" href="https://romanwojciechowski.github.io/">
+			<a class="name textContrast" href="https://romanwojciechowski.github.io/">
 				Roman Wojciechowski
 			</a>
-			<button onclick="change_css();">Check</button><br />
 			<div class="nav">
 				<ul class="links_nav">
 					<li><a class="textContrast" href="#omnie">O mnie</a></li>
 					<li><a class="textContrast" href="#portfolio">Portfolio</a></li>
 					<li><a class="textContrast" href="#kontakt">Kontakt</a></li>
 					<li><a class="textContrast" href="">Blog</a></li>
-				  </ul> 
+				</ul> 
 			</div> <!-- nav -->
+			<br>
+			<br>
+			<button class="contrast" onclick="change_text_css(); change_bg_css();">Kontrast</button><br />
 		</div> <!-- leftbar -->
 	</div> <!-- g1 -->
 
 	<div class="page">
 
-		<div class="g2" id="contrast">
+		<div class="g2 bgContrast" id="contrast">
 			<div id="omnie">
-				<span class="bg">O mnie</span>
+				<span class="bg textContrast">O mnie</span>
 			<div class="omnie">
 				
 			</div>
 			</div> <!-- omnie -->
 			<div id="portfolio">
-				<span class="bg"></span>Portfolio</span>
+				<span class="bg textContrast">Portfolio</span>
 			<div class="portfolio">
-				<section class="pcontainer left" id="pcontainer">
-					<div class="title_p">Title</div>
+				<section class="pcontainer left bgContrast" id="pcontainer">
+					<div class="title_p textContrast">Title</div>
 				</section>
-				<section class="pcontainer right" id="pcontainer">
-					<div class="title_p">Title</div>
+				<section class="pcontainer right bgContrast" id="pcontainer">
+					<div class="title_p textContrast">Title</div>
 				</section>
-				<section class="pcontainer left" id="pcontainer">
-					<div class="title_p">Title</div>
+				<section class="pcontainer left bgContrast" id="pcontainer">
+					<div class="title_p textContrast">Title</div>
 				</section>
-				<section class="pcontainer right" id="pcontainer">
-					<div class="title_p">Title</div>
+				<section class="pcontainer right bgContrast" id="pcontainer">
+					<div class="title_p textContrast">Title</div>
 				</section>
 			</div> 
 			</div> <!-- portfolio -->
 			<div id="kontakt">
-				<div class="kontakt">
-					<span class="firstl bg">Skontaktuj</span> <br> się ze mną.
+				<div class="kontakt textContrast">
+					<span class="firstl bg textContrast">Skontaktuj</span> <br> się ze mną.
 					<div class="contactlinks">
-						<div class="contactlink">Email</div>
+						<div class="contactlink textContrast">Email</div>
 							<span id="em" data-tooltip="Click to copy" onclick="changeContentem()">email@mail.com </span>
-						<div class="contactlink">Telegram</div>
-							<a id="tl" href="https://t.me/gonna_be_clever" target="_blank">gonna_be_clever </a>
+						<div class="contactlink textContrast">Telegram</div>
+							<a class="textContrast" id="tl" href="https://t.me/gonna_be_clever" target="_blank">gonna_be_clever </a>
 					</div> <!-- contactlinks -->
 				</div>
 			</div> <!-- kontakt -->
-			<footer id="footer">
-				<span class="footername">Roman Wojciechowski</span> 
+			<footer class="bgContrast" id="footer">
+				<span class="footername textContrast">Roman Wojciechowski</span> 
 				<div class="socialmedia">
 					<a href="https://github.com/romanwojciechowski" target="_blank"><i class="fab fa-github"></i></a>
 				</div>
@@ -181,8 +182,15 @@
 		})
 	</script>
 	    <script>
-			function change_css(){
-				document.querySelector('.textContrast').style.cssText = 'color: black;';
+			function change_text_css(){
+				const list = document.querySelectorAll(".textContrast");
+				list.forEach(el => (el.style.color = '#FFFF00'));
+			}
+		</script>
+		<script>
+				function change_bg_css(){
+				const list = document.querySelectorAll(".bgContrast");
+				list.forEach(el => (el.style.backgroundColor = 'black'));
 			}
 		</script>
 </body>
