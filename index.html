@@ -25,9 +25,13 @@
 					<li><a class="textContrast" href="">Blog</a></li>
 				</ul> 
 			</div> <!-- nav -->
-			<br>
-			<br>
-			<button class="contrast" onclick="change_text_css(); change_bg_css();">Kontrast</button><br />
+			<div class="contrastbox">
+				<span class="contrast textContrast">Kontrast</span>
+				<label class="switch">
+					<input id="myCheck" type="checkbox" onclick="onoff();">
+					<span class="slider round"></span>
+				</label>
+			</div>
 		</div> <!-- leftbar -->
 	</div> <!-- g1 -->
 
@@ -181,17 +185,19 @@
 		backgroundAlpha: 0.00
 		})
 	</script>
-	    <script>
-			function change_text_css(){
-				const list = document.querySelectorAll(".textContrast");
-				list.forEach(el => (el.style.color = '#FFFF00'));
-			}
-		</script>
-		<script>
-				function change_bg_css(){
-				const list = document.querySelectorAll(".bgContrast");
-				list.forEach(el => (el.style.backgroundColor = 'black'));
-			}
-		</script>
+	<script>
+	function onoff() {
+		var checkBox = document.getElementById("myCheck");
+		const list = document.querySelectorAll(".textContrast");
+		const list1 = document.querySelectorAll(".bgContrast");
+		if (checkBox.checked == true){
+			list.forEach(el => (el.style.color = '#FFFF00'));
+			list1.forEach(el => (el.style.backgroundColor = 'black'));
+		} else {
+			list.forEach(el => (el.style.color = null));
+			list1.forEach(el => (el.style.backgroundColor = null));
+		}
+	}
+	</script>
 </body>
 </html>
