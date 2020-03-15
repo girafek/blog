@@ -87,17 +87,23 @@
 
 
 <!-- Mobile-->
-
+	<button class="hamburger">
+		<span class="hamburger__box">
+		<span class="hamburger__inner"></span>
+		</span>
+	</button>
+	<div class="navigation">
+		<ul class="navigation__list">
+		<li class="navigation__item"><a href="#omnie_m">O mnie</a></li>
+		<li class="navigation__item"><a href="#portfolio_m">Portfolio</a></li>
+		<li class="navigation__item"><a href="#kontakt_m">Kontakt</a></li>
+		<li class="navigation__item"><a href="">Blog</a></li>
+		</ul>
+	</div>
 	<div class="mobile-page">
+		
 		<div class="content_m">
-			<div class="nav_m">
-				<ul class="links_nav_m">
-					<li><a href="#omnie">O mnie</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#kontakt">Kontakt</a></li>
-					<li><a href="">Blog</a></li>
-				  </ul> 
-			</div>
+
 			<a class="name_m" href="index.html">
 				Roman Wojciechowski
 			</a>
@@ -198,6 +204,17 @@
 			list1.forEach(el => (el.style.backgroundColor = null));
 		}
 	}
+	</script>
+	<script>
+		const hamburger = document.querySelector('.hamburger');
+		const nav = document.querySelector('.navigation');
+
+		const handleClick = () => {
+			hamburger.classList.toggle('hamburger--active');
+			nav.classList.toggle('navigation--active');
+		}
+
+		hamburger.addEventListener('click', handleClick);
 	</script>
 </body>
 </html>
