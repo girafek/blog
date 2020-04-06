@@ -185,7 +185,7 @@ li {
 	background-color: rgba(242, 243, 247, 0.418);
 }
 
-#omnie, #portfolio, #kontakt {
+#omnie, #portfolio{
 	color: #305CF8;
 	font-size: 22px;
 	padding: 5px 200px 0 40px;
@@ -201,11 +201,8 @@ li {
 	background-color: #D9E0FC;
 }
 
-#kontakt{
-	margin-bottom: 200px;
-}
 
-.omnie, .portfolio, .kontakt{
+.omnie, .portfolio{
 	min-height: 350px;
 	padding: 20px 0 10px 10px;
 
@@ -217,7 +214,7 @@ li {
 	display: flex;
 	flex-direction: column;
 	margin-top: 50px;
-	margin-bottom: 90px;
+	margin-bottom: 200px;
 }
 
 .pcontainer {
@@ -250,29 +247,13 @@ li {
 	color: #305CF8;
 }
 
-.contactlinks {
-	display: flex;
-	flex-direction: column;
-	padding: 30px 10px 0 0;
-	margin-left: 20px;
-}
-
 .contactlink {
 	color: rgb(156, 156, 156);
 	transition: .3s ease;
 	font-size: 19px;
 }
 
-#em{
-	cursor:pointer;
-	max-width: 150px;
-	margin: 10px 0 10px 20px;
-}
 
-#tl {
-	margin: 10px 0 0px 20px;
-	color: #333;
-}
 
 #github {
 	margin: 0 0 0 20px;
@@ -371,27 +352,28 @@ li {
 /* 4. Footer */
 
 footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 140px;
 	background-color: #F1F4FE;
-	height: 80px;
-	line-height: 80px;
-	padding: 0 30px 0 30px;
 	border-top: 1px solid rgb(207, 207, 255);
 }
 
 .socialmedia {
-	float: right;
+	margin-right: 10px;
 }
 
 .footername{
 	color: gray;
 	font-size: 18px;
 	transition: .3s ease;
+	margin-left: 10px;
 }
 
 .socialmedia a{
 	font-size: 30px;
 	color: gray;
-	margin-right: 10px;
 	transition: .3s ease;
 }
 
@@ -403,9 +385,20 @@ footer {
 	margin-right: 0;
 }
 
+.contactlinks {
+	display: flex;
+	flex-direction: column;
+}
 
+#em{
+	cursor:pointer;
+	max-width: 150px;
+	margin-bottom: 20px;
+}
 
-
+#tl {
+	color: #333;
+}
 
 
 
