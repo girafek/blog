@@ -13,22 +13,16 @@
             <a href="https://romanwojciechowski.xyz/" id="wrapper__head--name">Roman Wojciechowski</a>
             <ul id="wrapper__head__navigation">
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="kontakt.html">KONTAKT</a></li>
+                <li><a class="active" href="kontakt.html">KONTAKT</a></li>
                 <li><a href="blog.html">BLOG</a></li>
             </ul> 
         </header>
         <section id="wrapper__main">
-            <p id="wrapper__main--title">Moją największą pasją jest <span class="color">programowanie</span>. Interesuję się również <span class="color">psychologią</span> i <span class="color">kryptografią.</span> Fascynuje mnie <span class="color">matematyka.</span></p>
-            <h2 id="wrapper__main--subtitle">Jakich języków się uczę</h2>
-            <ul id="wrapper__main__list">
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>bash/shell</li>
-                <li>Python</li>
-                <li>LATEX</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+            <section id="wrapper__main__contact">
+                <p id="wrapper__main__project--title">Napisz do mnie</p>
+                <p id="wrapper__main__contact--email" onclick="copyText()"><img src="src/img/envelope.svg" alt="">voytsekhivskyi@gmail.com</p>
+                <a id="wrapper__main__contact--telegram" href="https://t.me/gonna_be_clever" target="_blank"><img src="src/img/telegram.svg" alt="">gonna_be_clever</a>
+            </section>
         </section>
         <footer id="wrapper__footer">
             <a id="wrapper__footer--github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>
@@ -36,6 +30,6 @@
             <span id="wrapper__footer__country"> <img id="wrapper__footer__country--geo" src="src/img/geo.png" alt=""> Poland</span>
         </footer>
     </section>
-
+    <script src="src/js/copyToClipboard.js"></script>
 </body>
 </html>
