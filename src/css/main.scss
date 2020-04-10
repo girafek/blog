@@ -1,0 +1,193 @@
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+$dark-color: #333;
+$blue-color: #3593F7;
+
+@mixin block {
+    border-bottom: 1px solid $dark-color;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 30px;
+    padding: 20px;
+}
+
+@mixin image {
+    max-width: 25px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.color {
+    color: $blue-color;
+    font-weight: 700;
+}
+
+.active {
+    color: #333 !important;
+    font-weight: 900 !important;
+    &:hover {
+        border-bottom: 1px solid $dark-color !important;
+    }
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    height: 100vh;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-end;
+        margin-top: 50px;
+        border-bottom: 2px solid $dark-color;
+    
+        &--name {
+            font-weight: 900;
+            font-size: 48px;
+            color: $dark-color;
+            align-self: flex-end;
+        }
+
+        &__navigation {
+            display: flex;
+            align-items: flex-start;
+            align-self: flex-end;
+            margin-bottom: 4px;
+            li {
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-weight: 700; 
+                    font-size: 16px;
+                    color: $blue-color;
+
+                    &:hover {
+                        border-bottom: 1px solid $blue-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__main {
+        width: 70%;
+        margin: 0 auto 100px auto;
+        cursor: default;
+
+
+        &--title {
+            text-indent: 1.5em;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        &--subtitle {
+            margin-top: 20px;
+        }
+
+        &__list {
+            width: 500px;
+            list-style-type: square;
+            margin-left: 3em;
+            
+            li {
+                &:nth-child(2n+1) {
+                    color: $blue-color;
+                }
+            }
+        }
+
+        &__contact {
+            @include block;
+            &--email {
+                display: flex;
+                align-items: center;
+                color: $dark-color;
+                cursor: pointer;
+
+                img {
+                    @include image;
+                    margin-right: 10px;
+                }
+            }
+
+            &--telegram {
+                display: flex;
+                align-items: center;
+                color: $dark-color;
+                width: normal;
+                img {
+                    @include image;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &__project {
+            @include block;
+            &--title {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            &--lang, &--info, &--git {
+                display: flex;
+                align-items: center;
+                img {
+                    @include image;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        justify-content: center;
+        align-items: center;
+        &--name {
+            color: $dark-color;
+            padding-bottom: 1px;
+
+            &:hover {
+                border-bottom: 1px solid $dark-color;
+                padding-bottom: 0;
+            }
+        }
+
+        &--github {
+            img {
+                @include image;
+                margin-bottom: 2px;
+            }
+        }
+
+        &__country {
+            display: flex;
+            align-items: center;
+            cursor: default;
+            &--geo {
+                @include image;
+            }
+        }
+    }
+}
