@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
-    <title>Roman Wojciechowski</title>
+    <title>Roman Wojciechowski/Biblioteka</title>
 </head>
 <body>
     <section id="wrapper">
@@ -14,16 +14,16 @@
             <ul id="wrapper__head__navigation">
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="kontakt.html">KONTAKT</a></li>
-				<li><a href="biblioteka.html">BIBLIOTEKA</a></li>
+				<li><a class="active" href="biblioteka.html">BIBLIOTEKA</a></li>
                 <li><a href="blog.html">BLOG</a></li>
             </ul> 
         </header>
         <section id="wrapper__main">
-            <ul id="wrapper__main__list">
-                <li>Ksiazki</li>
-                <li>Filmy</li>
-                <li>Seriale</li>
-            </ul>
+            <section id="wrapper__main__library">
+                <a id="wrapper__main__library--item" href="books.html"><img src="src/img/books.svg" alt=""> Ksiazki</a>
+                <a id="wrapper__main__library--item" href="movies.html"><img src="src/img/film.svg" alt=""> Filmy</a>
+                <a id="wrapper__main__library--item" href="tv-shows.html"><img src="src/img/display.svg" alt=""> Seriale</a>
+            </section>
         </section>
         <footer id="wrapper__footer">
             <a id="wrapper__footer--github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>

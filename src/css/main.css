@@ -50,8 +50,8 @@ ul {
       align-content: flex-end;
   margin: 50px 0 35px 0;
   border-bottom: 0px solid #333;
-  -webkit-box-shadow: 0px 15px 10px -15px rgba(51, 51, 51, 0.26);
-          box-shadow: 0px 15px 10px -15px rgba(51, 51, 51, 0.26);
+  -webkit-box-shadow: 0 7px 5px -7px #dbe3eb;
+          box-shadow: 0 7px 5px -7px #dbe3eb;
 }
 
 #wrapper__head--name {
@@ -94,7 +94,14 @@ ul {
 
 #wrapper__main {
   width: 70%;
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 100px auto;
   cursor: default;
 }
 
@@ -124,6 +131,13 @@ ul {
   margin: 0 auto;
   line-height: 30px;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #wrapper__main__contact--email {
@@ -133,8 +147,16 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   color: #333;
   cursor: pointer;
+  padding-bottom: 1px;
+}
+
+#wrapper__main__contact--email:hover {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0;
 }
 
 #wrapper__main__contact--email img {
@@ -150,8 +172,15 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   color: #333;
-  width: normal;
+  padding-bottom: 1px;
+}
+
+#wrapper__main__contact--telegram:hover {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0;
 }
 
 #wrapper__main__contact--telegram img {
@@ -186,6 +215,69 @@ ul {
   max-width: 25px;
   height: auto;
   margin-right: 10px;
+}
+
+#wrapper__main__library {
+  border-bottom: 1px solid #333;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#wrapper__main__library--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 19px;
+  padding-bottom: 1px;
+  margin-bottom: 1px;
+  color: #000;
+}
+
+#wrapper__main__library--item:hover {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0;
+}
+
+#wrapper__main__library--item img {
+  max-width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#wrapper__main--back {
+  color: #000;
+  -ms-flex-item-align: start;
+      align-self: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrapper__main--back img {
+  max-width: 25px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#wrapper__main--back:hover {
+  border-bottom: 1px solid #333;
 }
 
 #wrapper__footer {
