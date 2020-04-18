@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1200px) {
+    #wrapper__head--name {
+        font-weight: 700;
+        font-size: 38px;
+    }
+
+    #wrapper__head__navigation {
+        li {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #wrapper__head {
+        flex-direction: column;
+        align-self: center;
+
+        &--name {
+            font-size: 28px;
+            align-self: center;
+            margin-bottom: 10px;
+        }
+    
+        &__navigation {
+            li {
+                margin-right: 10px;
+            }
+        }
+    } 
+}
