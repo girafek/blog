@@ -196,8 +196,14 @@ ul {
         &__project {
             @include block;
             &--title {
-                font-size: 1.5em;
                 margin-bottom: 15px;
+                a {
+                    color: #000;
+                    font-size: 1.5em;
+                    &:hover {
+                        color: $blue-color;
+                    }
+                }
             }
 
             &--lang, &--info, &--git {
@@ -206,6 +212,13 @@ ul {
                 img {
                     @include image;
                     margin-right: 10px;
+                }
+
+                a {
+                    color: #000;
+                    &:hover {
+                        color: $blue-color;
+                    }
                 }
             }
         }
