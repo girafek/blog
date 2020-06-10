@@ -241,8 +241,16 @@ ul {
 }
 
 #wrapper__main__project--title {
-  font-size: 1.5em;
   margin-bottom: 15px;
+}
+
+#wrapper__main__project--title a {
+  color: #000;
+  font-size: 1.5em;
+}
+
+#wrapper__main__project--title a:hover {
+  color: #3593F7;
 }
 
 #wrapper__main__project--lang, #wrapper__main__project--info, #wrapper__main__project--git {
@@ -258,6 +266,14 @@ ul {
   max-width: 25px;
   height: auto;
   margin-right: 10px;
+}
+
+#wrapper__main__project--lang a, #wrapper__main__project--info a, #wrapper__main__project--git a {
+  color: #000;
+}
+
+#wrapper__main__project--lang a:hover, #wrapper__main__project--info a:hover, #wrapper__main__project--git a:hover {
+  color: #3593F7;
 }
 
 #wrapper__main__library {
