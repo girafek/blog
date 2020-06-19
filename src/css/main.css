@@ -34,9 +34,10 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 59%;
+  max-width: 50%;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 #wrapper__head {
@@ -56,7 +57,7 @@ ul {
 
 #wrapper__head--name {
   font-weight: 900;
-  font-size: 48px;
+  font-size: 43px;
   color: #333;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -99,7 +100,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: auto;
   margin-bottom: 50px;
 }
 
@@ -130,6 +130,9 @@ ul {
           flex-direction: column;
   margin: 50px auto 100px auto;
   cursor: default;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   /*TABLE*/
   /*TABLE END*/
 }
@@ -190,43 +193,21 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  color: #333;
-  cursor: pointer;
-  padding-bottom: 1px;
+  margin-top: auto;
 }
 
-#wrapper__main__contact--email:hover {
+#wrapper__main__contact--email a {
+  color: #000;
+  padding-bottom: 1px;
+  cursor: pointer;
+}
+
+#wrapper__main__contact--email a:hover {
   border-bottom: 1px solid #333;
   padding-bottom: 0;
 }
 
 #wrapper__main__contact--email img {
-  max-width: 25px;
-  height: auto;
-  margin-right: 10px;
-}
-
-#wrapper__main__contact--telegram {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  color: #333;
-  padding-bottom: 1px;
-}
-
-#wrapper__main__contact--telegram:hover {
-  border-bottom: 1px solid #333;
-  padding-bottom: 0;
-}
-
-#wrapper__main__contact--telegram img {
   max-width: 25px;
   height: auto;
   margin-right: 10px;
@@ -343,7 +324,7 @@ ul {
 
 #wrapper__main table.blueTable thead {
   background: #FFFFFF;
-  border-bottom: 2px solid #444444;
+  border-bottom: 1px solid #444444;
 }
 
 #wrapper__main table.blueTable thead th {
@@ -373,6 +354,48 @@ ul {
   color: #FFFFFF;
   padding: 2px 8px;
   border-radius: 5px;
+}
+
+#wrapper__main__articles {
+  border-bottom: 1px solid #333;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 30px;
+  padding: 20px;
+  width: 100%;
+}
+
+#wrapper__main__articles--title {
+  font-size: 2em;
+  text-align: center;
+}
+
+#wrapper__main__articles--author {
+  color: #5a5a5a;
+}
+
+#wrapper__main__articles--author:hover {
+  color: #000;
+}
+
+#wrapper__main__articles--content {
+  margin: 20px 0 20px 0;
+}
+
+#wrapper__main__articles--list {
+  list-style: circle;
+}
+
+#wrapper__main__articles--list li span {
+  margin-right: 10px;
+}
+
+#wrapper__main__articles--list li a {
+  color: #000;
+}
+
+#wrapper__main__articles--list li a:hover {
+  color: #5a5a5a;
 }
 
 #wrapper__footer {
