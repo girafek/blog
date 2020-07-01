@@ -1,31 +1,21 @@
-@media only screen and (max-width: 1200px) {
-    #wrapper__head--name {
-        font-weight: 700;
-        font-size: 38px;
-    }
 
-    #wrapper__head__navigation {
-        li {
-            margin-right: 10px;
-        }
-    }
-}
-
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 600px) {
     #wrapper__head {
         flex-direction: column;
-        align-self: center;
 
         &--name {
             font-size: 28px;
             align-self: center;
             margin-bottom: 10px;
+            flex-direction: column;
         }
     
         &__navigation {
-            li {
-                margin-right: 10px;
-            }
+            align-self: center;
         }
-    } 
+    }
+    
+    #wrapper__footer {
+        flex-direction: column;
+    }
 }
