@@ -10,7 +10,7 @@ $blue-color: #0645ad;
 
 @mixin block {
     border-bottom: 1px solid $dark-color;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     line-height: 30px;
     padding: 20px;
@@ -34,10 +34,10 @@ ul {
 }
 
 .active {
-    color: $dark-color !important;
-    font-weight: 900 !important;
-    &:hover {
-        border-bottom: 1px solid $dark-color !important;
+    color: $blue-color !important;
+
+    &::after {
+        background: $blue-color !important;
     }
 }
 
@@ -77,14 +77,14 @@ ul {
 
                 a { 
                     font-size: 16px;
-                    color: $blue-color;
+                    color: $dark-color;
 
                     &::after {
                         content: '';
                         display: block;
                         width: 0;
                         height: 1px;
-                        background: $blue-color;
+                        background: $dark-color;
                         transition: .3s;
                         position: relative;
                     }
@@ -101,24 +101,35 @@ ul {
         display: flex;
         align-items: center;
         margin-bottom: 50px;
+
         a {
             color: $dark-color;
-            padding-bottom: 1px;
-            &:hover{
-                border-bottom: 1px solid $dark-color;
-                padding-bottom: 0;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background: $dark-color;
+                transition: .3s;
+                position: relative;
+            }
+
+            &:hover::after{
+                width: 100%;
             }
         }
 
         img {
             @include image;
+            width: 1.5em;
             margin-right: 10px;
         }
     }
 
 
     &__main {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin: 0 auto 100px auto;
@@ -148,6 +159,7 @@ ul {
 
         &__contact {
             @include block;
+            border-bottom: none;
             display: flex;
             flex-direction: column;
 
@@ -158,11 +170,20 @@ ul {
 
                 a {
                     color: $dark-color;
-                    padding-bottom: 1px;
                     cursor: pointer;
-                    &:hover{
-                        border-bottom: 1px solid $dark-color;
-                        padding-bottom: 0;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        background: $dark-color;
+                        transition: .3s;
+                        position: relative;
+                    }
+    
+                    &:hover::after{
+                        width: 100%;
                     }
                 }
         
@@ -205,29 +226,26 @@ ul {
 
         &__library {
             @include block;
+            border-bottom: none;
 
             li{
                 display: flex;
-                align-items: center;    
+                align-items: center;
             }
 
             img {
                 @include image;
                 margin-right: 10px;
+                width: 3vh;
             }
 
             &--item {
                 display: flex;
                 align-items: center;
-                align-self: flex-start;
-                font-size: 19px;
-                padding-bottom: 1px;
-                margin-bottom: 1px;
                 color: $dark-color;
 
                 &:hover {
-                    border-bottom: 1px solid $dark-color;
-                    padding-bottom: 0;
+                    color: $blue-color;
                 }
             }
         }
@@ -330,32 +348,32 @@ table.blueTable {
     &__footer {
         display: flex;
         margin-top: auto;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
+        font-size: 15px;
         padding: 10px;
 
         &--name {
             color: $dark-color;
-            padding-bottom: 1px;
 
-            &:hover {
-                border-bottom: 1px solid $dark-color;
-                padding-bottom: 0;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background: $dark-color;
+                transition: .3s;
+                position: relative;
+            }
+
+            &:hover::after{
+                width: 100%;
             }
         }
 
         &--github {
+            margin-left: 10px;
             img {
-                @include image;
-                margin-bottom: 2px;
-            }
-        }
-
-        &__country {
-            display: flex;
-            align-items: center;
-            cursor: default;
-            &--geo {
                 @include image;
             }
         }

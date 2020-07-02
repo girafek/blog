@@ -18,12 +18,11 @@ ul {
 }
 
 .active {
-  color: #444 !important;
-  font-weight: 900 !important;
+  color: #0645ad !important;
 }
 
-.active:hover {
-  border-bottom: 1px solid #444 !important;
+.active::after {
+  background: #0645ad !important;
 }
 
 #wrapper {
@@ -84,7 +83,7 @@ ul {
 
 #wrapper__head__navigation li a {
   font-size: 16px;
-  color: #0645ad;
+  color: #444;
 }
 
 #wrapper__head__navigation li a::after {
@@ -92,7 +91,7 @@ ul {
   display: block;
   width: 0;
   height: 1px;
-  background: #0645ad;
+  background: #444;
   -webkit-transition: .3s;
   transition: .3s;
   position: relative;
@@ -114,22 +113,32 @@ ul {
 
 #wrapper--back a {
   color: #444;
-  padding-bottom: 1px;
 }
 
-#wrapper--back a:hover {
-  border-bottom: 1px solid #444;
-  padding-bottom: 0;
+#wrapper--back a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #444;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+#wrapper--back a:hover::after {
+  width: 100%;
 }
 
 #wrapper--back img {
   max-width: 25px;
   height: auto;
+  width: 1.5em;
   margin-right: 10px;
 }
 
 #wrapper__main {
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,10 +179,11 @@ ul {
 
 #wrapper__main__contact {
   border-bottom: 1px solid #444;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   line-height: 30px;
   padding: 20px;
+  border-bottom: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,13 +205,22 @@ ul {
 
 #wrapper__main__contact--email a {
   color: #444;
-  padding-bottom: 1px;
   cursor: pointer;
 }
 
-#wrapper__main__contact--email a:hover {
-  border-bottom: 1px solid #444;
-  padding-bottom: 0;
+#wrapper__main__contact--email a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #444;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+#wrapper__main__contact--email a:hover::after {
+  width: 100%;
 }
 
 #wrapper__main__contact--email img {
@@ -212,7 +231,7 @@ ul {
 
 #wrapper__main__project {
   border-bottom: 1px solid #444;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   line-height: 30px;
   padding: 20px;
@@ -256,10 +275,11 @@ ul {
 
 #wrapper__main__library {
   border-bottom: 1px solid #444;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   line-height: 30px;
   padding: 20px;
+  border-bottom: none;
 }
 
 #wrapper__main__library li {
@@ -275,6 +295,7 @@ ul {
   max-width: 25px;
   height: auto;
   margin-right: 10px;
+  width: 3vh;
 }
 
 #wrapper__main__library--item {
@@ -284,17 +305,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-size: 19px;
-  padding-bottom: 1px;
-  margin-bottom: 1px;
   color: #444;
 }
 
 #wrapper__main__library--item:hover {
-  border-bottom: 1px solid #444;
-  padding-bottom: 0;
+  color: #0645ad;
 }
 
 #wrapper__main table.blueTable {
@@ -355,7 +370,7 @@ ul {
 
 #wrapper__main__articles {
   border-bottom: 1px solid #444;
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   line-height: 30px;
   padding: 20px;
@@ -400,42 +415,40 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin-top: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 15px;
   padding: 10px;
 }
 
 #wrapper__footer--name {
   color: #444;
-  padding-bottom: 1px;
 }
 
-#wrapper__footer--name:hover {
-  border-bottom: 1px solid #444;
-  padding-bottom: 0;
+#wrapper__footer--name::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #444;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+}
+
+#wrapper__footer--name:hover::after {
+  width: 100%;
+}
+
+#wrapper__footer--github {
+  margin-left: 10px;
 }
 
 #wrapper__footer--github img {
-  max-width: 25px;
-  height: auto;
-  margin-bottom: 2px;
-}
-
-#wrapper__footer__country {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: default;
-}
-
-#wrapper__footer__country--geo {
   max-width: 25px;
   height: auto;
 }
