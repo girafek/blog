@@ -21,11 +21,5 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
-  #wrapper__footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 /*# sourceMappingURL=rwd.css.map */
