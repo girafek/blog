@@ -21,11 +21,20 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
+  #wrapper__head__navigation li a::after {
+    display: none;
+  }
   #wrapper__main {
     margin: 0 20px !important;
   }
+  #wrapper__main--subtitle {
+    margin-right: 10vh !important;
+  }
   #wrapper__main__project--title {
     margin-right: 4vh !important;
+  }
+  #wrapper__main table.blueTable {
+    width: 85%;
   }
   #wrapper--back {
     margin-left: 10px;
