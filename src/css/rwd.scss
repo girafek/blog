@@ -12,16 +12,32 @@
     
         &__navigation {
             align-self: center;
+
+            li {
+                a {
+                    &::after {
+                        display: none;
+                    }    
+                }
+            }
         }
     }
 
     #wrapper__main {
         margin: 0 20px !important;
 
+        &--subtitle {
+            margin-right: 10vh !important;
+        }
+
         &__project {
             &--title {
                 margin-right: 4vh !important;
             }
+        }
+
+        table.blueTable {
+            width: 85%;
         }
     }
     #wrapper {
