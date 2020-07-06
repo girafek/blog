@@ -1,11 +1,11 @@
 @media only screen and (max-width: 600px) {
-  #wrapper__head {
+  .wrapper__head {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #wrapper__head--name {
+  .wrapper__head__name {
     font-size: 28px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -16,27 +16,27 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #wrapper__head__navigation {
+  .wrapper__head__navigation {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  #wrapper__head__navigation li a::after {
+  .wrapper__head__navigation li a::after {
     display: none;
   }
-  #wrapper__main {
+  .wrapper__main {
     margin: 0 20px !important;
   }
-  #wrapper__main--subtitle {
+  .wrapper__main__subtitle {
     margin-right: 10vh !important;
   }
-  #wrapper__main__project--title {
+  .wrapper__main__project__title {
     margin-right: 4vh !important;
   }
-  #wrapper__main table.blueTable {
+  .wrapper__main table.blueTable {
     width: 85%;
   }
-  #wrapper--back {
+  .wrapper__back {
     margin-left: 10px;
   }
 }

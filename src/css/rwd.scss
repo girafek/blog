@@ -1,47 +1,50 @@
 
 @media only screen and (max-width: 600px) { 
-    #wrapper__head {
-        flex-direction: column;
+    .wrapper{
 
-        &--name {
-            font-size: 28px;
-            align-self: center;
-            margin-bottom: 10px;
+        &__head {
             flex-direction: column;
-        }
-    
-        &__navigation {
-            align-self: center;
 
-            li {
-                a {
-                    &::after {
-                        display: none;
-                    }    
+            &__name {
+                font-size: 28px;
+                align-self: center;
+                margin-bottom: 10px;
+                flex-direction: column;
+            }
+        
+            &__navigation {
+                align-self: center;
+
+                li {
+                    a {
+                        &::after {
+                            display: none;
+                        }    
+                    }
                 }
             }
         }
-    }
 
-    #wrapper__main {
-        margin: 0 20px !important;
 
-        &--subtitle {
-            margin-right: 10vh !important;
-        }
+        &__main {
+            margin: 0 20px !important;
 
-        &__project {
-            &--title {
-                margin-right: 4vh !important;
+            &__subtitle {
+                margin-right: 10vh !important;
+            }
+
+            &__project {
+                &__title {
+                    margin-right: 4vh !important;
+                }
+            }
+
+            table.blueTable {
+                width: 85%;
             }
         }
 
-        table.blueTable {
-            width: 85%;
-        }
-    }
-    #wrapper {
-        &--back {
+        &__back {
             margin-left: 10px;
         }
     }
