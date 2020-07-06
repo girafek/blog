@@ -6,31 +6,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/rwd.css">
-    <title>Roman Wojciechowski/Blog</title>
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/png">
+    <title>blog / Roman Wojciechowski</title>
 </head>
 <body>
-    <section id="wrapper">
-        <header id="wrapper__head">
-            <a href="https://romanwojciechowski.xyz/" id="wrapper__head--name">Roman Wojciechowski</a>
-            <ul id="wrapper__head__navigation">
+    <section class="wrapper">
+        <header class="wrapper__head">
+            <a class="wrapper__head__name" href="https://romanwojciechowski.xyz/"><img src="src/img/logo.png" alt=""> Roman Wojciechowski</a>
+            <ul class="wrapper__head__navigation">
                 <li><a href="portfolio">portfolio</a></li>
-                <li><a href="kontakt">kontakt</a></li>
-                <li><a href="biblioteka">biblioteka</a></li>
+				<li><a href="kontakt">kontakt</a></li>
+				<li><a href="biblioteka">biblioteka</a></li>
                 <li><a class="active" href="blog">blog</a></li>
             </ul> 
         </header>
-        <section id="wrapper__main">
-            <section id="wrapper__main__articles">
-                <h1 id="wrapper__main__articles--month">Czerwiec</h1>
-                <ul id="wrapper__main__articles--list">
-                    <li><span>20.06.2020</span><a href="src/blog/2020/june/nowy_minimalistyczny_blog">Minimalistyczny blog</a></li>
+        <section class="wrapper__main">
+            <section class="wrapper__main__articles">
+                <h1 class="wrapper__main__articles__month">Czerwiec</h1>
+                <ul class="wrapper__main__articles__list">
+                    <li><span>20.06.2020 </span><a href="src/blog/2020/june/nowy_minimalistyczny_blog">Nowy minimalistyczny blog</a></li>
                 </ul>
             </section>
         </section>
-        <div id="wrapper--back"><img src="src/img/back.svg" alt=""><a href="javascript:history.back()">Wstecz</a></div>
-        <footer id="wrapper__footer">
-            <a id="wrapper__footer--name" href="https://github.com/romanwojciechowski" target="_blank">Roman Wojciechowski, 2020</a>
-            <a id="wrapper__footer--github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>
+        <div class="wrapper__back"><img src="src/img/back.svg" alt=""><a href="javascript:history.back()">Wstecz</a></div>
+        <footer class="wrapper__footer">
+            <a class="wrapper__footer__name" href="https://github.com/romanwojciechowski" target="_blank">Roman Wojciechowski, 2020</a>
+            <a class="wrapper__footer__github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>
         </footer>
     </section>
 

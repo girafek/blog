@@ -13,7 +13,7 @@ $blue-color: #0645ad;
     width: 100%;
     margin: 0 auto;
     line-height: 30px;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 
 @mixin image {
@@ -29,10 +29,6 @@ ul {
     list-style: none;
 }
 
-.color {
-    color: $blue-color;
-}
-
 .active {
     color: $blue-color !important;
 
@@ -41,7 +37,7 @@ ul {
     }
 }
 
-#wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     max-width: 52em;
@@ -53,14 +49,14 @@ ul {
         display: flex;
         justify-content: space-between;
         margin: 30px 0 35px 0;
-        &--name {
+        &__name {
             font-size: 25px;
             color: $dark-color;
             display: flex;
             align-items: center;
 
             img {
-                max-width: 5vh;
+                max-width: 40px;
                 margin-right: 10px;
             }
         }
@@ -97,7 +93,7 @@ ul {
         }
     }
 
-    &--back {
+    &__back {
         display: flex;
         align-items: center;
         margin-bottom: 50px;
@@ -134,8 +130,6 @@ ul {
         flex-direction: column;
         margin: 0 auto 100px auto;
         cursor: default;
-        flex: 1 0 auto;
-
 
         &__navigation {
             display: flex;
@@ -145,15 +139,23 @@ ul {
             }
         }
 
-        &--title {
-            margin-top: 20px;
-        }
-
-        &--subtitle {
+        &__title {
             margin: 20px 0 20px 0;
+
+            &--color {
+                color: $blue-color;
+            }
         }
 
-        &--genre {
+        &__subtitle {
+            margin: 20px 0 20px 0;
+
+            &--color {
+                color: $blue-color;
+            }
+        }
+
+        &__genre {
             font-weight: 700;
         }
 
@@ -163,7 +165,7 @@ ul {
             display: flex;
             flex-direction: column;
 
-            &--email {
+            &__email {
                 display: flex;
                 align-items: center;
                 margin-top: auto;
@@ -196,8 +198,10 @@ ul {
 
         &__project {
             @include block;
-            &--title {
-                margin-bottom: 15px;
+
+            &__title {
+                margin-bottom: 10px;
+
                 a {
                     color: $dark-color;
                     font-size: 110%;
@@ -207,9 +211,10 @@ ul {
                 }
             }
 
-            &--lang, &--info, &--git {
+            &__lang, &__info, &__git {
                 display: flex;
                 align-items: center;
+
                 img {
                     @include image;
                     margin-right: 10px;
@@ -239,7 +244,7 @@ ul {
                 width: 1.8em;
             }
 
-            &--item {
+            &__item {
                 display: flex;
                 align-items: center;
                 color: $dark-color;
@@ -250,69 +255,72 @@ ul {
             }
         }
 
-/*TABLE*/
 
-table.blueTable {
-    margin-bottom: 40px;
-    border: 1px solid #1C6EA4;
-    background-color: #FFFFFF;
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-  }
-  table.blueTable td, table.blueTable th {
-    border: 1px solid #AAAAAA;
-    padding: 3px 2px;
-  }
-  table.blueTable tbody td {
-    font-size: 13px;
-  }
-  table.blueTable tr:nth-child(even) {
-    background: #F6F8FA;
-  }
-  table.blueTable thead {
-    background: #FFFFFF;
-    border-bottom: 1px solid #444444;
-  }
-  table.blueTable thead th {
-    width: 40%;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    color: $dark-color;
-    border-left: 2px solid #D0E4F5;
-  }
-  table.blueTable thead th:first-child {
-    border-left: none;
-  }
-  
-  table.blueTable tfoot td {
-    font-size: 14px;
-  }
-  table.blueTable tfoot .links {
-    text-align: right;
-  }
-  table.blueTable tfoot .links a{
-    display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
-    padding: 2px 8px;
-    border-radius: 5px;
-  }
+                        /*TABLE*/
 
-/*TABLE END*/
+            &__table {
+                margin-bottom: 40px;
+                border: 1px solid #1C6EA4;
+                background-color: #FFFFFF;
+                width: 100%;
+                text-align: left;
+                border-collapse: collapse;
+            }
+            &__table td, &__table th {
+                border: 1px solid #AAAAAA;
+                padding: 3px 2px;
+            }
+            &__table tbody td {
+                font-size: 13px;
+            }
+            &__table tr:nth-child(even) {
+                background: #F6F8FA;
+            }
+            &__table thead {
+                background: #FFFFFF;
+                border-bottom: 1px solid #444444;
+            }
+            &__table thead th {
+                width: 40%;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+                color: $dark-color;
+                border-left: 2px solid #D0E4F5;
+            }
+            &__table thead th:first-child {
+                border-left: none;
+            }
+            
+            &__table tfoot td {
+                font-size: 14px;
+            }
+            &__table tfoot .links {
+                text-align: right;
+            }
+            &__table tfoot .links a{
+                display: inline-block;
+                background: #1C6EA4;
+                color: #FFFFFF;
+                padding: 2px 8px;
+                border-radius: 5px;
+            }
+
+                    /*TABLE END*/
+
+                    
 
 &__articles {
     @include block;
     width: 100%;
 
 
-    &--title {
+    &__title {
         font-size: 2em;
         text-align: center;
     }
 
-    &--author {
+    &__author {
             color: rgb(90, 90, 90);
             
             &:hover {
@@ -320,11 +328,11 @@ table.blueTable {
             }
     }
 
-    &--content {
+    &__content {
         margin: 20px 0 20px 0;
     }
 
-    &--list {
+    &__list {
         list-style: circle;
         
         li {
@@ -353,7 +361,7 @@ table.blueTable {
         font-size: 15px;
         padding: 10px;
 
-        &--name {
+        &__name {
             color: $dark-color;
 
             &::after {
@@ -371,7 +379,7 @@ table.blueTable {
             }
         }
 
-        &--github {
+        &__github {
             margin-left: 10px;
             img {
                 @include image;
