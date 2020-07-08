@@ -1,12 +1,16 @@
 
 @media only screen and (max-width: 600px) { 
+    @mixin block {
+        border-bottom: none;
+    }
+
     .wrapper{
 
         &__head {
             flex-direction: column;
 
             &__name {
-                font-size: 28px;
+                font-size: 25px;
                 align-self: center;
                 margin-bottom: 10px;
                 flex-direction: column;
@@ -42,10 +46,24 @@
             table.blueTable {
                 width: 85%;
             }
+
+            &__articles {
+                width: 90%;
+                margin: 0;
+    
+                &__title {
+                    font-size: 20px
+                }
+
+                &__content {
+
+                }
+            }
         }
 
         &__back {
-            margin-left: 10px;
+            margin: auto 0 0 10px;
+            
         }
     }
 }
