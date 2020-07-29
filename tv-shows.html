@@ -4,29 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/main.css">\
+    <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/rwd.css">
-    <title>Roman Wojciechowski/Biblioteka/Ksiazki</title>
+    <link rel="shortcut icon" href="src/img/logo.png" type="image/png">
+    <title>filmy / biblioteka / Roman Wojcichowski</title>
 </head>
 <body>
-    <section id="wrapper">
-        <header id="wrapper__head">
-            <a href="https://romanwojciechowski.xyz/" id="wrapper__head--name">Roman Wojciechowski</a>
-            <ul id="wrapper__head__navigation">
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-				<li><a href="kontakt.html">KONTAKT</a></li>
-				<li><a class="active" href="biblioteka.html">BIBLIOTEKA</a></li>
-                <li><a href="blog.html">BLOG</a></li>
+    <section class="wrapper">
+        <header class="wrapper__head">
+            <a class="wrapper__head__name" href="https://romanwojciechowski.xyz/"><img src="src/img/logo.png" alt=""> Roman Wojciechowski</a>
+            <ul class="wrapper__head__navigation">
+                <li><a href="portfolio">portfolio</a></li>
+				<li><a href="kontakt">kontakt</a></li>
+				<li><a class="active" href="biblioteka">biblioteka</a></li>
+                <li><a href="blog">blog</a></li>
             </ul> 
         </header>
-        <section id="wrapper__main">
-            Seriale
-            <a id="wrapper__main--back" href="biblioteka.html"><img src="src/img/back.svg" alt=""> Wstecz</a>
+        <section class="wrapper__main">
+            <h2 class="wrapper__main__title">Seriale.</h2>
+            <p class="wrapper__main__subtitle"></p>
+
+            <table class="wrapper__main__table">
+                <thead>
+                <tr>
+                <th>Tytuł</th>
+                <th>Reżyser</th>
+                <th>Data premiery</th>
+                <th>Liczba sezonów</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Mr. Robot</td>
+                <td>Sam Esmail</td>
+                <td>2015</td>
+                <td>4</td>
+                </tr>
+                <tr>
+                <td>Sherlock</td>
+                <td>Toby Haynes, Euros Lyn, Paul McGuigan</td>
+                <td>2010</td>
+                <td>4</td>
+                </tr>
+                </tbody>
+                </table>
+
         </section>
-        <footer id="wrapper__footer">
-            <a id="wrapper__footer--github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>
-            <a id="wrapper__footer--name" href="https://github.com/romanwojciechowski" target="_blank">Roman Wojciechowski, 2020</a>
-            <span id="wrapper__footer__country"> <img id="wrapper__footer__country--geo" src="src/img/geo.png" alt=""> Poland</span>
+
+        <div class="wrapper__back"><img src="src/img/back.svg" alt=""><a href="javascript:history.back()">Wstecz</a></div>
+
+        <footer class="wrapper__footer">
+            <a class="wrapper__footer__name" href="https://github.com/romanwojciechowski" target="_blank">Roman Wojciechowski, 2020</a>
+            <a class="wrapper__footer__github" href="https://github.com/romanwojciechowski" target="_blank"><img src="src/img/github-icon.svg" alt=""></a>
         </footer>
     </section>
 
