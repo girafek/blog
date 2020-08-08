@@ -160,7 +160,7 @@ ul {
 }
 
 .wrapper__main__title {
-  margin: 20px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .wrapper__main__title--color {
@@ -168,7 +168,7 @@ ul {
 }
 
 .wrapper__main__subtitle {
-  margin: 20px 0 20px 0;
+  margin-bottom: 20px;
 }
 
 .wrapper__main__subtitle--color {
